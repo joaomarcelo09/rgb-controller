@@ -1,0 +1,19 @@
+[package]
+name = "rgb-controller"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "Tauri desktop app for controlling RGB keyboard, fans and RAM"
+
+[lib]
+name = "rgb_controller_lib"
+crate-type = ["staticlib", "cdylib", "rlib"]
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+tauri = { version = "2", features = [] }
+serde = { workspace = true }
+serde_json = { workspace = true }
+rgb-core = { path = "../crates/rgb-core" }

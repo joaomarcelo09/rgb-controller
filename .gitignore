@@ -1,0 +1,18 @@
+node_modules/
+dist/
+target/
+*.log
+.DS_Store
+
+# Local / personal files that must never be published
+.env
+.env.*
+*.local
+config.json
+!src-tauri/**/*.json
+
+# Editors / OS
+.vscode/
+.idea/
+*.swp
+Thumbs.db
